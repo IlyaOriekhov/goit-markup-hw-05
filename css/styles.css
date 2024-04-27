@@ -422,6 +422,7 @@ h2 {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  cursor: pointer;
 }
 
 .portfolio-list:hover .list-frth:hover {
@@ -443,7 +444,6 @@ h2 {
 .overlaybox {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .overlay-text {
@@ -548,4 +548,94 @@ h2 {
 
 .foot-link-icon {
   fill: #f4f4fd;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.para-sbscr {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.label-footer {
+  gap: 24px;
+  display: flex;
+}
+
+.input-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #fff;
+  outline: none;
+}
+
+.input-email::placeholder {
+  color: #fff;
+}
+
+.btn-sbscr {
+  width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-icon {
+  margin-left: 16px;
+  fill: #fff;
+}
+
+/* THIS. IS. MODAAAAL*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  max-width: 408px;
+  max-height: 584px;
 }
