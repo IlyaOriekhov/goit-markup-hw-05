@@ -556,6 +556,11 @@ h2 {
   margin-left: 80px;
 }
 
+.form-footer {
+  display: flex;
+  gap: 24px;
+}
+
 .para-sbscr {
   margin-bottom: 16px;
   font-weight: 500;
@@ -563,11 +568,6 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-}
-
-.label-footer {
-  gap: 24px;
-  display: flex;
 }
 
 .input-email {
@@ -590,7 +590,7 @@ h2 {
 }
 
 .btn-sbscr {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
