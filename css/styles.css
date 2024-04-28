@@ -763,7 +763,7 @@ h2 {
   margin-bottom: 24px;
 }
 
-.checkbox-input {
+.form-privacy {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -782,4 +782,26 @@ h2 {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+.checkbox-input:checked + .form-privacy .checkbox-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.privacy-text {
+  color: #4d5ae5;
+}
+
+.modal-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
